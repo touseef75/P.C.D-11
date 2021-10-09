@@ -17,11 +17,11 @@ let play = document.querySelector(".play");
 play.addEventListener("click",function(){
     if(num2 == 0){
     audio.play();
-    change.src = "../images/pause.png";
+    change.src = "../images/pause6.jpg";
     num2 = 1;
     }else{
         num2 = 0;
-      change.src = "../images/play2.png";
+      change.src = "../images/next5.png";
     audio.pause();
     }
 
