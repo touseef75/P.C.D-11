@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.C.D 1</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.cs/style1.css">
+</head>
+<style>
+    #incre{
+        background-color: #a4133c;
+        color: white;
+        font-size: 4rem;
+        padding: 0px 30px 4px 30px;
+        border: none;
+        outline: none;
+    }
+    .play {
+        width: 100%;
+        text-align: center;
+    }
+
+    .trans2 {
+       width: 95%;
+       text-align: end;
+       margin-top: -100px;
+
+    }
+
+    #incre {
+        transform: scale(0.6);
+    }
+
+    @media screen and (max-width:768px) {
+        .cont {
+            height: 100%;
+            overflow-x: hidden;
+            background-position: top;
+        }
+
+        #head {
+            transform: scale(0.9);
+        }
+
+        #duaimg {
+            transform: scale(0.7);
+        }
+
+        .trans2 {
+            width: 190%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container-fluid cont"
+        style="height: 100vh; background-image: url(../images/bk1.jpg);background-size: cover;">
+        <br>
+        <br>
+
+        <div class="head d-flex justify-content-center" style="transform: scale(1.5);color: green;">
+            <h1 id="head">آداب</h1>
+        </div>
+        <br>
+
+        <div class="dua1 d-flex justify-content-center" style="transform: scale(1);">
+            <img id="duaimg" src="../images/160991.jpg" alt="" style="border-radius: 2rem;">
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="trans2">
+                <button id="incre">Next</button>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <audio id="audio">
+        <source src="../audio/3rd_kalima.mp3" type="audio/ogg">
+    </audio>
+
+    <script src="../javascript/main4.js"></script>
+</body>
+
+</html>
